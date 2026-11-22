@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.community.flutter.wifi">
+    <!-- No permissions here on purpose, so a host app that links this plugin but does not show
+         Wi-Fi details does not inherit ACCESS_FINE_LOCATION. An app that uses it declares
+         ACCESS_WIFI_STATE, CHANGE_WIFI_STATE, ACCESS_NETWORK_STATE, CHANGE_NETWORK_STATE,
+         ACCESS_FINE_LOCATION, ACCESS_COARSE_LOCATION and INTERNET in its own manifest. An app that
+         lists nearby networks may also declare NEARBY_WIFI_DEVICES: requestLocationPermission then asks
+         for it together with location on Android 13+. -->
+</manifest>

@@ -1,0 +1,36 @@
+name: community_flutter_wifi
+description: "Wi-Fi manager for Flutter: scan nearby networks, connection, IP and router details, connected devices on the LAN, diagnostics and network suggestions."
+version: 1.0.0
+homepage: https://github.com/EYALIN/community_flutter_wifi
+repository: https://github.com/EYALIN/community_flutter_wifi
+issue_tracker: https://github.com/EYALIN/community_flutter_wifi/issues
+funding:
+  - https://github.com/sponsors/EYALIN
+topics:
+  - wifi
+  - network
+  - lan-scanner
+  - connectivity
+  - ip-address
+
+environment:
+  sdk: ^3.13.5
+  flutter: '>=3.3.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.community.flutter.wifi
+        pluginClass: CommunityFlutterWifiPlugin
+      ios:
+        pluginClass: CommunityFlutterWifiPlugin
